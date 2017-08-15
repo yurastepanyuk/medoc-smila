@@ -1,0 +1,11 @@
+<div class="ui items">
+
+  <medoc-product-row
+  *ngFor="let curProduct of productList"
+  [product]="curProduct"
+  (click)="clicked(curProduct)"
+  [class.selected]="isSelected(curProduct)"
+  ></medoc-product-row>
+
+</div>
+

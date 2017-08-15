@@ -1,0 +1,11 @@
+<medoc-product-image [product]="product"></medoc-product-image>
+
+
+<div class="content">
+  <div class="header">{{ product.name }}</div>
+  <div class="description">
+    <medoc-product-description [product]="product"></medoc-product-description>
+  </div>
+</div>
+
+<medoc-product-price [price]="product.price"></medoc-product-price>
